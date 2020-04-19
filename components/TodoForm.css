@@ -1,0 +1,95 @@
+body {
+  background-color: burlywood;
+  min-height: 100vh;
+}
+.todoListMain {
+  width: 800px;
+  margin: 0 auto;
+  border: 3px blue solid;
+}
+.todoListMain h1{
+  text-align: center;
+}
+.todo_add input {
+  width:700px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  color: #FFF;
+  box-sizing: border-box;
+  border-left: none;
+  border-right: none;
+}
+.todo_add button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF;
+  display: inline-block;
+}
+
+.todo_add button:hover {
+  background-color: #003399;
+  border: 2px solid #003399;
+  cursor: pointer;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.todo-is-completed .checkbox {
+  color: #000;
+  background: #fff;
+}
+
+.todo-is-completed .todo_text {
+  text-decoration: line-through;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .2s ease-in-out;
+  border: 1px solid #fff;
+}
+
+.checkbox:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2rem;
+  width: 500px;
+}
+
+input {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1.4rem;
+  outline: none;
+  width: 100%;
+}
